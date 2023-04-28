@@ -24,6 +24,16 @@ public class Main{
         return products;
     }
 
+    public static List<Product> filterProductsByCategory(List<Product> products, String category) {
+        List<Product> filteredProducts = new ArrayList<>();
+        for (Product product : products) {
+            if (product.getCategory().equalsIgnoreCase(category)) {
+                filteredProducts.add(product);
+            }
+        }
+        return filteredProducts;
+    }
+
     public static void main(String[] args) {  
         List<Product> products = new ArrayList<>();
         System.out.println("Hello World!");
