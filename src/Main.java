@@ -34,8 +34,17 @@ public class Main{
         return filteredProducts;
     }
 
+    public static void test_filter_function() {
+        List<Product> products = generateProducts();
+        List<Product> filteredProducts = filterProductsByCategory(products, "Toys");
+
+        for (Product product : filteredProducts) {
+            System.out.println(product);
+        }
+    }
+
     public static void main(String[] args) {  
-        List<Product> products = new ArrayList<>();
-        System.out.println("Hello World!");
+
+        test_filter_function();
     }
 }
