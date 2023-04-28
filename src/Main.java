@@ -4,7 +4,7 @@ import java.util.List;
 
 public class Main{
     public static double priceFunction(int i) {
-        return 50 + (450.0 * Math.sin((Math.PI * i) / 15.0));
+        return Math.abs(50 + (450.0 * Math.sin((Math.PI * i) / 15.0)));
     }
 
     public static List<Product> generateProducts() {
