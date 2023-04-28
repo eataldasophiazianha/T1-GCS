@@ -1,14 +1,9 @@
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Random;
-
-public class Main {
-    public static class Product {
-        private int id;
-        private String name;
-        private String category;
-        private double price;
-    }
+package src;
+class Product {
+    private int id;
+    private String name;
+    private String category;
+    private double price;
 
     public Product(int id, String name, String category, double price) {
         this.id = id;
