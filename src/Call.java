@@ -61,18 +61,7 @@
 //     public Enum getStatus() {
 //         return status;
 //     }
-//     public void setStatus(Enum status) {
-//         if(this.status == Status.aberto && status == Status.concluido){
-//             throw new IllegalArgumentException("Cannot close an open call");
-//         }
-//         if(this.status == Status.concluido && status == Status.aberto){
-//             throw new IllegalArgumentException("Cannot open a closed call");
-//         }
-//         if(this.status == Status.concluido && status == Status.andamento){
-//             throw new IllegalArgumentException("Cannot reopen a closed call");
-//         }
-//         this.status = (Status) status;
-//     }
+//     
 //     @Override
 //     public String toString() {
 //         return "Call{" +
