@@ -4,8 +4,8 @@
 
 //     public void closaAllCalls() {
 //         for(Call call : calls){
-//             if(call.getStatus() == "Aberto" || call.getStatus() == "Em andamento"){
-//                 call.setStatus("Concuido");
+//             if(call.getStatus() == "call.aberto" || call.getStatus() == "call.andamento"){
+//                 call.setStatus("call.concluido");
 //             }
 //         }
 //     }
