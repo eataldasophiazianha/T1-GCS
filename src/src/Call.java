@@ -58,10 +58,10 @@
          this.description = description;
      }
 
-     public Enum getStatus() {
+     public Status getStatus() {
          return status;
      }
-        public void setStatus(Enum status) {
+        public void setStatus(Status status) {
                 if(this.status == Status.aberto && status == Status.concluido){
                     throw new IllegalArgumentException("Cannot close an open call");
                 }
