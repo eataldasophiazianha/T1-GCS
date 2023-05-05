@@ -62,7 +62,6 @@
          return status;
      }
         public void setStatus(Enum status) {
-            status = status.toLowerCase()
                 if(this.status == Status.aberto && status == Status.concluido){
                     throw new IllegalArgumentException("Cannot close an open call");
                 }
