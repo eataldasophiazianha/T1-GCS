@@ -13,10 +13,21 @@ public class CallFunctions {
 
         String equipment = call.getEquipment();
 
-        this.setDescription(this.description + "\n Call ID#" + callId + "by user" + caller + "on" + callDate + "for equipment" + equipment + "was merged into this one.")
+        this.setDescription(this.description + "\n Call ID#" + callId + "do usuario" + caller + " na data" + callDate + " para o equipamento" + equipment + "foi unida com essa.");
         
         call.setStatus(concluido);
+
+        System.out.print(this.callId + ": Call unida com " + callId + " com sucesso. \n");
     }
+
+    public void replicateCall() {
+        if (this.status == "closed") {
+
+            Call call = new Call(this.id + 1, this.emloyerId, this.productId, new Date(), this.description , "aberto");
+            
+        }
+    }
+
 
 }
  */
