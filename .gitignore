@@ -1,3 +1,6 @@
-Main.class
+*.xml
+*.class
 out
 T1-GCS.iml
+/.idea
+/.vscode

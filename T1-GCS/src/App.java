@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class Main {
+public class App {
     public static void main(String[] args) {
         test_filter_function();
     }
@@ -11,7 +11,7 @@ public class Main {
     }
 
     public static List<Product> generateProducts() {
-        List<Product> products = new ArrayList<>();
+        List<Product> products = new ArrayList<Product>();
         String[] categories = {
                 "Electronics", "Home Appliances", "Furniture", "Toys", "Sports",
                 "Clothing", "Books", "Gardening", "Kitchen", "Automotive"
@@ -45,5 +45,4 @@ public class Main {
             System.out.println(product);
         }
     }
-
 }
