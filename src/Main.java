@@ -1,10 +1,13 @@
-package src;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 import java.util.Date;
 
-public class Main{
+public class Main {
+    public static void main(String[] args) {
+        test_filter_function();
+    }
+
     public static double priceFunction(int i) {
         return Math.abs(50 + (450.0 * Math.sin((Math.PI * i) / 15.0)));
     }
@@ -36,10 +39,10 @@ public class Main{
         return filteredProducts;
     }
 
-    // public static Call createCall(int id, String employerId, String productId, Date callDate, String description, String status){
-    //     Call call = new Call(id, employerId, productId, new Date(),description ,status);
-    //     return call;
-    // }
+    public static Call createCall(int id, String employerId, String productId, Date callDate, String description, String status){
+         Call call = new Call(id, employerId, productId, new Date(),description ,status);
+         return call;
+    }
 
 
 
@@ -67,7 +70,7 @@ public class Main{
             System.out.println(product);
         }
     }
-
+    
     ArrayList productList = new ArrayList<>();
 
     public void add(String product){
@@ -102,11 +105,5 @@ public class Main{
         System.out.println("Produto Invalido");
       } 
 }  
-    }
-
-    public static void main(String[] args) {  
-
-        test_filter_function();
-        // test_createCall();
     }
 }
