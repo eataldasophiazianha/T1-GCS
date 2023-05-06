@@ -1,10 +1,13 @@
-package src;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 import java.util.Date;
 
-public class Main{
+public class Main {
+    public static void main(String[] args) {
+        test_filter_function();
+    }
+
     public static double priceFunction(int i) {
         return Math.abs(50 + (450.0 * Math.sin((Math.PI * i) / 15.0)));
     }
@@ -36,10 +39,10 @@ public class Main{
         return filteredProducts;
     }
 
-    // public static Call createCall(int id, String employerId, String productId, Date callDate, String description, String status){
-    //     Call call = new Call(id, employerId, productId, new Date(),description ,status);
-    //     return call;
-    // }
+    public static Call createCall(int id, String employerId, String productId, Date callDate, String description, String status){
+         Call call = new Call(id, employerId, productId, new Date(),description ,status);
+         return call;
+    }
 
 
 
@@ -67,10 +70,40 @@ public class Main{
             System.out.println(product);
         }
     }
+    
+    ArrayList productList = new ArrayList<>();
 
-    public static void main(String[] args) {  
+    public void add(String product){
+        productList.add(product);
+    }
 
-        test_filter_function();
-        // test_createCall();
+    public String listCall(){
+        String list = "";
+        int count = productList.size()-1;
+        for(int i = 0; i > productList.size(); i++){
+            list+= " " + productList.get(count);
+            count--;
+        }
+        return list;
+    }
+    
+    public static void moveProduct(){
+
+        if(i = suport){
+        System.out.println("Deseja Mover Qual Equipamento?");
+        String resp = scanner.nextLine();
+            for(i = 0, i< List.generateProducts.length, i++){
+                System.out.println(generateProducts.getName);
+    }
+            for(j = 0, j< generateProducts.length, j++){
+                if(resp.equals(generateProducts.getName)){
+                System.out.println("Digite o Nome do Novo Setor");
+                String novoSetor = scanner.nextLine();
+                generateProducts.setDepartament(novoSetor);
+      } 
+      else{
+        System.out.println("Produto Invalido");
+      } 
+}  
     }
 }

@@ -3,14 +3,12 @@ public class Product {
     private String name;
     private String category;
     private double price;
-    private String departament;
 
-    public Product(int id, String name, String category, double price, String departament) {
+    public Product(int id, String name, String category, double price) {
         this.id = id;
         this.name = name;
         this.category = category;
         this.price = price;
-        this.departament = departament;
     }
 
     public int getId() {
@@ -43,14 +41,6 @@ public class Product {
 
     public void setPrice(double price) {
         this.price = price;
-    }
-
-    public void getDepartament(){
-        return departament;
-    }
-
-    public void setDepartament(String departament){
-        this.departament = departament;
     }
 
     @Override
