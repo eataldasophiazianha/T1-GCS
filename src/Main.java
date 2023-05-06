@@ -1,5 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
+import java.util.Date;
 
 public class Main {
     public static void main(String[] args) {
@@ -37,6 +39,29 @@ public class Main {
         return filteredProducts;
     }
 
+    public static Call createCall(int id, String employerId, String productId, Date callDate, String description, String status){
+         Call call = new Call(id, employerId, productId, new Date(),description ,status);
+         return call;
+    }
+
+
+
+
+    //     public static void test_createCall() {
+    //     Scanner scanner = new Scanner(System.in);
+    //     System.out.println("Enter the caller name: ");
+    //     String caller = scanner.nextLine();
+    //     System.out.println("Enter the equipment name: ");
+    //     String equipment = scanner.nextLine();
+    //     System.out.println("Enter the description: ");
+    //     String description = scanner.nextLine();
+    //     scanner.close();
+    //     String status = "OPEN";
+
+    //     Call call = new Call(1,caller, equipment, new Date(),description , status);
+    //     System.out.println(call);
+    // }
+
     public static void test_filter_function() {
         List<Product> products = generateProducts();
         List<Product> filteredProducts = filterProductsByCategory(products, "Toys");
@@ -45,5 +70,40 @@ public class Main {
             System.out.println(product);
         }
     }
+    
+    ArrayList productList = new ArrayList<>();
 
+    public void add(String product){
+        productList.add(product);
+    }
+
+    public String listCall(){
+        String list = "";
+        int count = productList.size()-1;
+        for(int i = 0; i > productList.size(); i++){
+            list+= " " + productList.get(count);
+            count--;
+        }
+        return list;
+    }
+    
+    public static void moveProduct(){
+
+        if(i = suport){
+        System.out.println("Deseja Mover Qual Equipamento?");
+        String resp = scanner.nextLine();
+            for(i = 0, i< List.generateProducts.length, i++){
+                System.out.println(generateProducts.getName);
+    }
+            for(j = 0, j< generateProducts.length, j++){
+                if(resp.equals(generateProducts.getName)){
+                System.out.println("Digite o Nome do Novo Setor");
+                String novoSetor = scanner.nextLine();
+                generateProducts.setDepartament(novoSetor);
+      } 
+      else{
+        System.out.println("Produto Invalido");
+      } 
+}  
+    }
 }
