@@ -68,6 +68,26 @@ public class Main{
         }
     }
 
+    public static void moveProduct(){
+
+        if(i = suport){
+        System.out.println("Deseja Mover Qual Equipamento?");
+        String resp = scanner.nextLine();
+            for(i = 0, i< List.generateProducts.length, i++){
+                System.out.println(generateProducts.getName);
+    }
+            for(j = 0, j< generateProducts.length, j++){
+                if(resp.equals(generateProducts.getName)){
+                System.out.println("Digite o Nome do Novo Setor");
+                String novoSetor = scanner.nextLine();
+                generateProducts.setDepartament(novoSetor);
+      } 
+      else{
+        System.out.println("Produto Invalido");
+      } 
+}  
+    }
+
     public static void main(String[] args) {  
 
         test_filter_function();
