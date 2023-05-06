@@ -68,6 +68,22 @@ public class Main{
         }
     }
 
+    ArrayList productList = new ArrayList<>();
+
+    public void add(String product){
+        productList.add(product);
+    }
+
+    public String listCall(){
+        String list = "";
+        int count = productList.size()-1;
+        for(int i = 0; i > productList.size(); i++){
+            list+= " " + productList.get(count);
+            count--;
+        }
+        return list;
+    }
+    
     public static void moveProduct(){
 
         if(i = suport){
